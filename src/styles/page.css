@@ -1,0 +1,21 @@
+.home {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #eee;
+  overflow: hidden;
+}
+
+.oto {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.noSelect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
