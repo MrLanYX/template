@@ -1,24 +1,8 @@
 # violet-home
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## 项目进程
++ 2021.5.1 项目创建
++ 2021.5.2 计划做成个人主页
+    - 用上自己会的全部知识
+    - 重在交互特效使用上
++ 2021.5.2 项目暂停 优先设计个人博客和nas云盘
