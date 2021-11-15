@@ -12,22 +12,32 @@ VueRouter.prototype.push = function push(location, onResolve, onReject) {
 // 引入所需文件
 import index from '@/pages/index.vue';
 import login from '@/pages/login.vue';
+import router404 from '@/pages/404.vue';
 
 export default new VueRouter({
     routes: [{
-        path: '/',
-        name: '',
-        redirect: '/index',
-        children: []
-    }, {
-        path: '/index',
-        name: 'index',
-        component: index,
-        children: []
-    }, {
-        path: '/login',
-        name: 'login',
-        component: login,
-        children: []
-    }]
+            path: '/',
+            name: '',
+            redirect: '/index',
+            children: []
+        }, {
+            path: '/index',
+            name: 'index',
+            component: index,
+            children: []
+        }, {
+            path: '/login',
+            name: 'login',
+            component: login,
+            children: []
+        }, {
+            path: '/404',
+            name: '404',
+            component: router404,
+            children: []
+        },{
+            path: '*',
+            redirect: '/404',
+        }
+    ]
 })
