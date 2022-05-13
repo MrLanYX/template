@@ -3,7 +3,7 @@
  * https://cli.vuejs.org/zh/config/#%E7%9B%AE%E6%A0%87%E6%B5%8F%E8%A7%88%E5%99%A8
  *
  */
-const url = 'http://192.168.10.178:9999'
+const url = 'http://192.168.10.110:9999' // 后台url
 // 基础路径，发布前修改这里,当前配置打包出来的资源都是相对路径
 let publicPath = './'
 module.exports = {
@@ -31,4 +31,25 @@ module.exports = {
             }
         }
     },
+    // 打包 window 应用配置
+    pluginOptions: {
+        electronBuilder: {
+            builderOptions: {
+                productName: 'test',
+                nsis: {
+                    oneClicke: false,
+                    perMachine: true,
+                    allowElevation: true,
+                    allowToChangeInstallationDirectory: true,
+                    createDesktopShortcut: true,
+                    runAfterFinish:true,
+                    installerIcon:'./public/favicon.ico',
+                    uninstallerIcon:'./public/favicon.ico',
+                },
+                win:{
+                    icon:'./public/favicon.ico'
+                }
+            }
+        }
+    }
 }

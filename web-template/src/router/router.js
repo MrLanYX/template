@@ -18,7 +18,7 @@ export default new VueRouter({
     routes: [{
             path: '/',
             name: '',
-            redirect: '/index',
+            redirect: '/login',
             children: []
         }, {
             path: '/index',
